@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Networking</title>
+  </head>
+  <body>
+    <!-- header content -->
+    <header>
+      <div>
+        <h1>Introduction To Networking</h1>
+        <nav>
+          <a href="index.html">||Home</a>
+          <a href="all_about_html.html">||All About HTML||</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main content -->
+
+    <main>
+      <!-- internet -->
+      <div>
+        <h2>What is the internet?</h2>
+        <p>
+          It is a medium to communicate with multiple other devices. Like we are
+          sending the data form the one computer to another computer or sending
+          the data from phone to computer and accessing the website.The internet
+          is a vast, global network of interconnected computer networks that
+          allows for the exchange of data. It's often called a "network of
+          networks" because it links millions of computers, devices, and
+          networks worldwide using a standardized set of rules known as
+          protocols.
+        </p>
+        <img
+          src="/Image/internet.webp"
+          alt="internet image"
+          height="350px"
+          width="500px"
+        />
+        <br />
+        <br />
+      </div>
+
+      <!-- data transfer -->
+      <div>
+        <h3>How is data transferred?</h3>
+        <p>
+          To send the data from one device to another device we need the exact
+          location of that device otherwise data goes to anyone. To finding the
+          exact location of device come the concept of IP Address where each
+          device gets unique IP Address when they connected to internet then
+          sender device make a packet and write the IP of reciver device and own
+          IP and send the packet to internet then packet goes through the router
+          and recive to reciever end .
+        </p>
+        <img
+          src="/Image/transfer.png"
+          alt="Transfer image"
+          height="300px"
+          width="800px"
+        />
+        <br /><br />
+      </div>
+
+      <!-- ip address -->
+
+      <div>
+        <h2>IP Address:</h2>
+
+        <p>
+          An IPv4 (Internet Protocol version 4)address is the classic IP address
+          format everyone is used to seeing.
+        </p>
+        <ul>
+          <li>
+            <p>
+              <b>Structure:</b>It's a 32-bit number. To make it readable for
+              humans, we divide it into four 8-bit sections, and write each
+              section as a decimal number from 0 to 255.
+            </p>
+          </li>
+          <ul>
+            <li>
+              <p><b>Example:</b>172.217.16.142 (one of Google's addresses)</p>
+            </li>
+          </ul>
+          <li>
+            <p>
+              <b>The Big Problem (The Why):</b>A 32-bit number means there's a
+              hard limit on the total number of possible addresses: 2^32, which
+              is about 4.3 billion.
+            </p>
+          </li>
+        </ul>
+        <p>
+          When the internet was designed, 4.3 billion seemed like an infinite
+          number. But with the explosion of laptops, phones, servers, smart
+          watches, and even smart refrigerators, we quickly realized we would
+          run out. This scarcity is the single most important reason we have
+          public and private IPs.
+        </p>
+
+        <br />
+      </div>
+
+      <!-- public ip address -->
+      <div>
+        <h2>Public IP Address:</h2>
+        <p>
+          A Public IP address is your global, unique address on the internet.
+        </p>
+        <ul>
+          <li>
+            <p><b>Analogy:</b>The company's main, public phone number.</p>
+          </li>
+          <li>
+            <p>
+              <b>Uniqueness: </b>It must be globally unique. No two devices on
+              the internet can have the same public IP address at the same time.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Purpose: </b>To be reachable from anywhere in the world. This
+              is the address that web servers, email servers, and any other
+              public service use.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Assignment:</b> It is assigned to you by your Internet Service
+              Provider (ISP) (Comcast, AT&T, etc.). You don't control it; you
+              lease it from them.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Who has one?</b>Your home router has one. The server
+              hosting google.com has one. The server hosting Netflix has one.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- private ip -->
+
+      <div>
+        <h2>Private IP Address:</h2>
+        <p>
+          A Private IP address is a local address used only within your own
+          private network (e.g., your home Wi-Fi, your office network).
+        </p>
+        <ul>
+          <li>
+            <p>
+              <b>Analogy: </b>: The employee's private, 4-digit extension
+              number.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Uniqueness:</b> It only needs to be unique on your local
+              network. My laptop can have the address 192.168.1.100 on my home
+              Wi-Fi, and your laptop can have the exact same address on your
+              home Wi-Fi. They don't conflict because they are in separate,
+              private networks.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Purpose: </b>To allow devices on the same local network to
+              communicate with each other without needing a globally unique
+              address for each one. Your laptop talks to your printer using
+              private IPs. Your phone streams to your Chromecast using private
+              IPs.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Assignment:</b>It is assigned to your devices by your
+              own router.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Reserved Ranges:</b>The internet authorities have reserved
+              specific ranges of addresses just for this purpose. If you see an
+              IP address starting with one of these, you know it's a private
+              address:
+            </p>
+            <ul>
+              <li>10.0.0.0 to 10.255.255.255 (Used by large corporations)</li>
+              <li>
+                172.16.0.0 to 172.31.255.255 (Used by medium-sized networks)
+              </li>
+              <li>
+                192.168.0.0 to 192.168.255.255 (Most common for home networks)
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- DNS -->
+      <div>
+        <h2>DNS(DOMAIN NAME SYSTEM)</h2>
+        <p>
+          DNS, or the Domain Name System, is like the internet's phonebook. It
+          translates human-friendly domain names, such as www.google.com, into
+          machine-readable IP addresses, like 142.250.190.46. This process is
+          essential because computers communicate using numerical IP addresses,
+          but humans find it much easier to remember and use names.
+        </p>
+
+        <h3>How DNS Works</h3>
+        <p>
+          The DNS resolution process is a series of steps that a computer takes
+          to find the correct IP address for a given domain name. Here's a
+          breakdown of the key components and the process:
+        </p>
+        <ul>
+          <li>
+            <p>
+              <b>DNS Resolver:</b>This is typically part of your internet
+              service provider (ISP). It's the first stop in the DNS lookup
+              process. When you type a domain name into your browser, your
+              computer sends a request to the DNS resolver.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Root Name Servers:</b>If the DNS resolver doesn't have the IP
+              address in its cache, it queries a root name server. There are 13
+              logical root servers worldwide, and they manage the highest level
+              of the DNS hierarchy. They don't know the specific IP address
+              you're looking for, but they point the resolver to the correct
+              Top-Level Domain (TLD) name server.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>TLD Name Servers: </b>These servers manage specific top-level
+              domains like .com, .org, or .net. For example, a .com TLD name
+              server would be queried for www.google.com. It then directs the
+              resolver to the authoritative name server.
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Authoritative Name Server:</b>This server holds the actual DNS
+              records for a specific domain. It's the final stop in the
+              resolution process and provides the DNS resolver with the IP
+              address. The resolver then sends this IP address back to your
+              computer, and your browser can connect to the website.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mac Address -->
+      <div>
+        <h2>MAC Address:</h2>
+        <p>
+          A MAC (Media Access Control) Address is a unique, permanent serial
+          number burned into every network-capable piece of hardware (your
+          laptop's Wi-Fi card, your phone, your smart TV, the network port on
+          your desktop).
+        </p>
+        <p>
+          A MAC (Media Access Control) Address is a unique, permanent serial
+          number burned into every network-capable piece of hardware (your
+          laptop's Wi-Fi card, your phone, your smart TV, the network port on
+          your desktop).
+        </p>
+        <ol>
+          <li>
+            Colon-Separated (Most Common):
+            <p>3C:22:FB:A3:B4:C5</p>
+          </li>
+          <li>
+            Hyphen-Separated (Common on Windows):
+            <p>3C-22-FB-A3-B4-C5</p>
+          </li>
+          <li>
+            Period-Separated (Used by Cisco and other network gear):
+            <p>3c22.fba3.b4c5</p>
+          </li>
+          <li>
+            No Separators (Less common, seen in some software):
+            <p>3C22FBA3B4C5</p>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Port number -->
+
+      <div>
+        <h2>Port Number:</h2>
+        <p>
+          Port numbers are numerical identifiers (0-65535) in computer
+          networking that identify specific applications or services on a
+          device. They work with IP addresses to direct network traffic to the
+          correct service on a machine, with common ports assigned to standard
+          applications like HTTP (port 80) and HTTPS (port 443).
+        </p>
+
+        <p>A port number is a 16-bit unsigned integer.</p>
+        <ul>
+          <li>
+            <p>
+              <b>16-bit:</b>This means the number is stored using 16 binary
+              digits (1s and 0s).
+            </p>
+          </li>
+          <li>
+            <p>
+              <b>Unsigned:</b>This means it cannot be negative. The values are
+              all positive.
+            </p>
+          </li>
+        </ul>
+        <p>
+          Because it's a 16-bit number, the total number of possible ports is
+          2^16, which equals 65,536.
+        </p>
+
+        <h3>The Practical Format: The Three Categories:</h3>
+        <p>
+          To prevent chaos, the internet authorities (IANA) have divided the
+          65,536 available ports into three categories. This is the most
+          practical format for you as a developer to understand.
+        </p>
+
+        <!-- well known ports -->
+        <div>
+          <h4>1:Well-Known Ports (Range: 0 - 1023)</h4>
+          <p>
+            These are the VIPs of the port world. They are reserved for the most
+            common, fundamental, and standardized internet services.
+          </p>
+          <ul>
+            <li>
+              <p><b>Controlled By:</b> Strictly managed by IANA.</p>
+            </li>
+            <li>
+              <p>
+                <b>Privileges:</b>On most operating systems (like Linux and
+                macOS), you need administrator (root or sudo) privileges to run
+                a program that listens on these ports. This is a security
+                measure to prevent rogue applications from impersonating
+                standard services.
+              </p>
+            </li>
+            <li>
+              <p><b>Key Examples for a Developer:</b></p>
+              <ul>
+                <li>21: FTP (File Transfer Protocol)</li>
+                <li>
+                  22: SSH (Secure Shell) - How you will log into your servers.
+                </li>
+                <li>
+                  25: SMTP (Simple Mail Transfer Protocol) - For sending email.
+                </li>
+                <li>53: DNS (Domain Name System)</li>
+                <li>
+                  80: HTTP (HyperText Transfer Protocol) - The standard for
+                  unencrypted web traffic.
+                </li>
+                <li>
+                  443: HTTPS (HTTP Secure) - The standard for encrypted web
+                  traffic.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Registered ports -->
+        <div>
+          <h4>2. Registered Ports (Range: 1024 - 49151)</h4>
+          <p>
+            These ports are for specific applications or services that are not
+            as universal as the "well-known" ones. Companies and developers can
+            register a port for their software to avoid conflicts with other
+            applications.
+          </p>
+        </div>
+
+        <!-- Dynamic ports -->
+        <div>
+          <h4>3. Dynamic / Private / Ephemeral Ports (Range: 49152 - 65535)</h4>
+          <p>
+            When your web browser (the client) makes a request to a server
+            (e.g., to google.com on port 443), your computer's operating system
+            needs to assign a temporary source port for its side of the
+            conversation. It grabs a random, unused port from this high-numbered
+            range for the duration of that single connection.
+          </p>
+        </div>
+      </div>
+    </main>
+  
+    <hr>
+    <!-- footer content -->
+
+   <!-- Footer content -->
+    <footer>
+  <table width="100%" cellpadding="10" cellspacing="0" border="0">
+    <tr>
+      <!-- Feedback Form Section -->
+      <td valign="top">
+        <h3>Feedback Form</h3>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          <br><br>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+          <br><br>
+
+          <label>Rate Us:</label><br>
+          <input type="radio" value="1 Star" id="rating1" name="Ratings">
+          <label for="rating1">1 Star</label>
+
+          <input type="radio" value="2 Stars" id="rating2" name="Ratings">
+          <label for="rating2">2 Stars</label>
+
+          <input type="radio" value="3 Stars" id="rating3" name="Ratings">
+          <label for="rating3">3 Stars</label>
+
+          <input type="radio" value="4 Stars" id="rating4" name="Ratings">
+          <label for="rating4">4 Stars</label>
+          <br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea name="comments" id="comments" rows="4" cols="25"></textarea>
+          <br><br>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </td>
+
+      <!-- Quick Links Section -->
+      <td valign="top">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="networking.html">Top</a></li>
+          <li><a href="https://www.freecodecamp.org/news/tag/computer-networking/ " target="_blank">Learn More about Networking</a></li>
+        </ul>
+      </td>
+
+      <!-- Contact Section -->
+      <td valign="top">
+        <h3>Contact Me:</h3>
+        <address>
+          CT College Shahpur <br>
+          Jalandhar,Punjab<br>
+          PinCode: 144020<br>
+          Phone: <a href="tel:+910234567890">+91 0123456789</a><br>
+          Email: <a href="mailto:ravibhushankumar78tp@gmail.com">ravibhushankumar78tp@gmail.com</a>
+        </address>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <p><small>&copy; All rights reserved by WebDevelopment</small></p>
+</footer>
+
+  </body>
+</html>

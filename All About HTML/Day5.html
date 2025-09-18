@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+     <!-- content of header -->
+      <header>
+        <div>
+            <h1>Deployment of HTML Website</h1>
+            <nav>
+                 <a href="index.html">||Home</a>
+                <a href="networking.html">||Introduction To Networking||</a><br><br>
+                <a href="Day1.html">All about tags</a><br>
+                <a href="Day2.html">List & Table</a><br>
+                <a href="Day3.html">Boilerplate & File path</a><br>
+                <a href="Day4.html">Form</a><br>
+                
+            </nav>
+        </div>
+         <br>
+      </header>
+
+    <main>
+        <h1>HTML Media Tags and Deployment</h1>
+
+  <!-- Media Tags Section -->
+  <h2>Media Tags</h2>
+  <p>Media tags in HTML allow us to add multimedia content such as images, audio, video, and other interactive content to a webpage.</p>
+
+  <h3>1. Image Tag (&lt;img&gt;)</h3>
+  <p>Used to embed images.</p>
+  <pre>
+&lt;img src="images/photo.jpg" alt="Description" width="300" height="200"&gt;
+  </pre>
+  <ul>
+    <li><b>src</b>: Path to the image file.</li>
+    <li><b>alt</b>: Alternate text if the image is not displayed.</li>
+    <li><b>width, height</b>: Dimensions of the image.</li>
+  </ul>
+  <h4>Example of Image tag:</h4>
+  <img src="/Image/images.jpeg" alt="image">
+  <h3>2. Audio Tag (&lt;audio&gt;)</h3>
+  <p>Used to embed audio files.</p>
+  <pre>
+&lt;audio controls&gt;
+  &lt;source src="audio/music.mp3" type="audio/mpeg"&gt;
+  &lt;source src="audio/music.ogg" type="audio/ogg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;
+  </pre>
+  <ul>
+    <li><b>controls</b>: Adds play, pause, volume options.</li>
+    <li><b>autoplay</b>: Starts audio automatically.</li>
+    <li><b>loop</b>: Plays audio repeatedly.</li>
+  </ul>
+<h4>Example of audio tag:</h4>
+
+<audio  controls>
+       
+        <source src="/Image/check.mp3">
+        
+     </audio>
+  <h3>3. Video Tag (&lt;video&gt;)</h3>
+  <p>Used to embed video files.</p>
+  <pre>
+&lt;video width="400" height="300" controls&gt;
+  &lt;source src="video/movie.mp4" type="video/mp4"&gt;
+  &lt;source src="video/movie.ogg" type="video/ogg"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+  </pre>
+  <ul>
+    <li><b>controls</b>: Shows play, pause, fullscreen buttons.</li>
+    <li><b>autoplay</b>: Starts video automatically.</li>
+    <li><b>loop</b>: Plays video repeatedly.</li>
+    <li><b>muted</b>: Mutes video by default.</li>
+  </ul>
+
+  <h4>Example of Video tag:</h4>
+  <video src="/Image/hawa.MP4" height="350" width="250" controls></video>
+
+  <h3>4. Iframe Tag (&lt;iframe&gt;)</h3>
+  <p>Used to embed another webpage, map, or video (like YouTube) inside a webpage.</p>
+  <pre>
+&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;
+
+&lt;!-- YouTube Embed Example --&gt;
+&lt;iframe width="560" height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+title="YouTube video" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+  </pre>
+  <h4>Example of Iframe tag:</h4>
+  <table>
+      <thead>
+          
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>
+                <iframe src="https://www.youtube.com/embed/GkZN_-HMCJ8" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/AJ4E1zf5tQs" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/k78lNSAB8VY" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/a4j9R_DvZ8M" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+         </tr>
+         <tr>
+            
+            <td>
+                <iframe src="https://www.youtube.com/embed/ilz-VZBz5Vg" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/CE150x4w0bo" frameborder="0"height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/_b0bfpO3b4I" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe src="https://www.youtube.com/embed/_kio3U6CV2c" frameborder="0" height="220" width="310" allowfullscreen></iframe>
+            </td>
+         </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+ 
+
+  <h3>5. Embed Tag (&lt;embed&gt;)</h3>
+  <p>Used for embedding external content such as PDFs or multimedia files.</p>
+  <pre>
+&lt;embed src="files/sample.pdf" type="application/pdf" width="600" height="500"&gt;
+  </pre>
+<hr>
+  <!-- Deployment Section -->
+  <h2>Deployment of HTML</h2>
+  <p>Deployment means making your HTML website accessible on the internet. Steps include:</p>
+
+  <h3>1. Save Your Project</h3>
+  <pre>
+project/
+│
+├── index.html
+├── about.html
+├── images/
+│   └── photo.jpg
+├── audio/
+│   └── music.mp3
+└── video/
+    └── movie.mp4
+  </pre>
+
+  <h3>2. Test Locally</h3>
+  <p>Open <b>index.html</b> in your browser to check everything works before uploading.</p>
+
+  <h3>3. Choose Deployment Method</h3>
+  <ul>
+    <li><b>Localhost</b>: Open HTML file directly in browser.</li>
+    <li><b>GitHub Pages</b>: Free hosting with GitHub repository.</li>
+    <li><b>Netlify / Vercel</b>: Free and easy cloud hosting.</li>
+    <li><b>Web Hosting</b>: Upload files to hosting provider (Hostinger, Bluehost, etc.).</li>
+  </ul>
+
+  <h3>4. Deployment Example with GitHub Pages</h3>
+  <ol>
+    <li>Create a GitHub account.</li>
+    <li>Create a repository and upload HTML files.</li>
+    <li>Go to <b>Settings &gt; Pages</b> in repository.</li>
+    <li>Select branch <b>main</b> and folder <b>/root</b>.</li>
+    <li>Your website will be live at:  
+        <code>https://username.github.io/repository-name</code></li>
+  </ol>
+
+  <h3>5. Deployment Example :</h3>
+  <ol>
+    <li>Go to:
+        <ul>
+            <li><a href="https://www.netlify.com/" target="_blank">Netlify</a></li>
+            <li><a href="https://render.com/" target="_blank">Render</a></li>
+            <li><a href="https://vercel.com/" target="_blank">Vercel</a></li>
+        </ul>
+    </li>
+    <li>Sign up and drag-drop your project folder.</li>
+    <li>Your site will be live with a free domain.</li>
+  </ol>
+  <br><hr>
+  <h2> My Deployed Project:</h2>
+  <ol>
+      <li>
+        <a href="https://form-git-main-ravis-projects-c94206ef.vercel.app/" target="_blank">HTML Form</a><br>
+
+    </li>
+    <li>
+
+        <a href="https://dynamic-quotes-generator.vercel.app" target="_blank">Dynamic Quotes Generator</a><br>
+    </li>
+    <li>
+
+        <a href="https://bubblegenerator.vercel.app" target="_blank">Bubble Project</a><br>
+    </li>
+  </ol>
+    </main>
+     <hr>
+
+
+<!-- Footer content -->
+    <footer>
+  <table width="100%" cellpadding="10" cellspacing="0" border="0">
+    <tr>
+      <!-- Feedback Form Section -->
+      <td valign="top">
+        <h3>Feedback Form</h3>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          <br><br>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+          <br><br>
+
+          <label>Rate Us:</label><br>
+          <input type="radio" value="1 Star" id="rating1" name="Ratings">
+          <label for="rating1">1 Star</label>
+
+          <input type="radio" value="2 Stars" id="rating2" name="Ratings">
+          <label for="rating2">2 Stars</label>
+
+          <input type="radio" value="3 Stars" id="rating3" name="Ratings">
+          <label for="rating3">3 Stars</label>
+
+          <input type="radio" value="4 Stars" id="rating4" name="Ratings">
+          <label for="rating4">4 Stars</label>
+          <br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea name="comments" id="comments" rows="4" cols="25"></textarea>
+          <br><br>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </td>
+
+      <!-- Quick Links Section -->
+      <td valign="top">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Day5.html">Top</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML " target="_blank">Learn More about HTML</a></li>
+        </ul>
+      </td>
+
+      <!-- Contact Section -->
+      <td valign="top">
+        <h3>Contact Me:</h3>
+        <address>
+          CT College Shahpur <br>
+          Jalandhar,Punjab<br>
+          PinCode: 144020<br>
+          Phone: <a href="tel:+910234567890">+91 0123456789</a><br>
+          Email: <a href="mailto:ravibhushankumar78tp@gmail.com">ravibhushankumar78tp@gmail.com</a>
+        </address>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <p><small>&copy; All rights reserved by WebDevelopment</small></p>
+</footer>
+
+</body>
+</html>

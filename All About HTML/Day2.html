@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+</head>
+<body>
+     <!-- content of header -->
+      <header>
+        <div>
+            <h1>List and Table in depth</h1>
+            <nav>
+                <a href="index.html">  || Home  ||</a>
+                <a href="networking.html" >Introduction To Networking ||</a><br><br>
+                <a href="Day1.html">All about tags</a><br>
+                <a href="Day3.html">Boilerplate & File path </a><br>
+                <a href="Day4.html">Form</a><br>
+                <a href="Day5.html">Deployment</a><br>
+            </nav>
+        </div>
+         <br>
+      </header>
+
+    <main>
+           <h1>HTML Lists and Tables in Depth</h1>
+  <p>This page explains all about lists and tables with detailed examples.</p>
+  <hr>
+
+  <!-- ================= Lists ================= -->
+  <h2>1. Lists in HTML</h2>
+  <p>Lists are used to group related items. HTML provides three main types of lists.</p>
+
+  <h3>1.1 Unordered List (&lt;ul&gt;)</h3>
+  <p>Items appear with bullets by default.</p>
+  <pre>
+&lt;ul&gt;
+  &lt;li&gt;Apple&lt;/li&gt;
+  &lt;li&gt;Banana&lt;/li&gt;
+  &lt;li&gt;Cherry&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+  </ul>
+
+  <h3>1.2 Ordered List (&lt;ol&gt;)</h3>
+  <p>Items appear with numbers or letters.</p>
+  <pre>
+&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;
+  </pre>
+  <ol type="A" start="3">
+    <li>First</li>
+    <li>Second</li>
+  </ol>
+  <p>Attributes of &lt;ol&gt;:</p>
+  <ul>
+    <li><b>type</b>: defines numbering style (1, A, a, I, i)</li>
+    <li><b>start</b>: defines the starting number</li>
+    <li><b>reversed</b>: reverses the order</li>
+  </ul>
+
+  <h3>1.3 Nested Lists</h3>
+  <pre>
+&lt;ul&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Vegetables&lt;/li&gt;
+&lt;/ul&gt;
+  </pre>
+  <ul>
+    <li>Fruits
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+      </ul>
+    </li>
+    <li>Vegetables</li>
+  </ul>
+
+  <h3>1.4 Description List (&lt;dl&gt;)</h3>
+  <p>Used for terms and descriptions.</p>
+  <pre>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;
+  </pre>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+  </dl>
+
+  <hr>
+
+  <!-- ================= Tables ================= -->
+  <h2>2. Tables in HTML</h2>
+  <p>Tables display data in rows and columns. Each table consists of table rows (&lt;tr&gt;) containing header cells (&lt;th&gt;) or data cells (&lt;td&gt;).</p>
+
+  <h3>2.1 Basic Table</h3>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ravi&lt;/td&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </pre>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td>22</td>
+    </tr>
+  </table>
+
+  <h3>2.2 Table with Caption, Head, Body, and Foot</h3>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;caption&gt;Monthly Sales&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Month&lt;/th&gt;
+      &lt;th&gt;Sales&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;January&lt;/td&gt;
+      &lt;td&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;February&lt;/td&gt;
+      &lt;td&gt;150&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Total&lt;/td&gt;
+      &lt;td&gt;250&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+  </pre>
+  <table border="1">
+    <caption>Monthly Sales</caption>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th>Sales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>150</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total</td>
+        <td>250</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h3>2.3 Merged Cells (colspan and rowspan)</h3>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Item&lt;/th&gt;
+    &lt;th&gt;Quantity&lt;/th&gt;
+    &lt;th&gt;Price&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td rowspan="2"&gt;Fruit&lt;/td&gt;
+    &lt;td&gt;Apple&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Banana&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;Total&lt;/td&gt;
+    &lt;td&gt;80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </pre>
+  <table border="1">
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Fruit</td>
+      <td>Apple</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Banana</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td colspan="2">Total</td>
+      <td>80</td>
+    </tr>
+  </table>
+
+  <h3>2.4 Scope Attribute</h3>
+  <p>Scope helps screen readers understand the relation between headers and cells.</p>
+  <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th scope="col"&gt;Name&lt;/th&gt;
+    &lt;th scope="col"&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;th scope="row"&gt;Ravi&lt;/th&gt;
+    &lt;td&gt;22&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+  </pre>
+  <table border="1">
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+    </tr>
+    <tr>
+      <th scope="row">Ravi</th>
+      <td>22</td>
+    </tr>
+  </table>
+    
+    </main>
+    <hr>
+   
+<!-- Footer content -->
+    <footer>
+  <table width="100%" cellpadding="10" cellspacing="0" border="0">
+    <tr>
+      <!-- Feedback Form Section -->
+      <td valign="top">
+        <h3>Feedback Form</h3>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="user_name" placeholder="Enter your name" required>
+          <br><br>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="user_email" placeholder="Enter your email" required>
+          <br><br>
+
+          <label>Rate Us:</label><br>
+          <input type="radio" value="1 Star" id="rating1" name="Ratings">
+          <label for="rating1">1 Star</label>
+
+          <input type="radio" value="2 Stars" id="rating2" name="Ratings">
+          <label for="rating2">2 Stars</label>
+
+          <input type="radio" value="3 Stars" id="rating3" name="Ratings">
+          <label for="rating3">3 Stars</label>
+
+          <input type="radio" value="4 Stars" id="rating4" name="Ratings">
+          <label for="rating4">4 Stars</label>
+          <br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea name="comments" id="comments" rows="4" cols="25"></textarea>
+          <br><br>
+
+          <button type="submit">Submit Feedback</button>
+        </form>
+      </td>
+
+      <!-- Quick Links Section -->
+      <td valign="top">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Day2.html">Top</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML " target="_blank">Learn More about HTML</a></li>
+        </ul>
+      </td>
+
+      <!-- Contact Section -->
+      <td valign="top">
+        <h3>Contact Me:</h3>
+        <address>
+          CT College Shahpur <br>
+          Jalandhar,Punjab<br>
+          PinCode: 144020<br>
+          Phone: <a href="tel:+910234567890">+91 0123456789</a><br>
+          Email: <a href="mailto:ravibhushankumar78tp@gmail.com">ravibhushankumar78tp@gmail.com</a>
+        </address>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <p><small>&copy; All rights reserved by WebDevelopment</small></p>
+</footer>
+
+</body>
+</html>
